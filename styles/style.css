@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+html, body {
+    margin: 0;
+    /* font-family: 'Montserrat', sans-serif; */
+    font-family: 'Poppins', sans-serif;
+    /* font-family: 'Monoton', cursive; */
+    /* font-family: 'Kaushan Script', cursive; */
+}
+
+* {
+    box-sizing: border-box;
+
+    /* color: #00f2b6;
+    color: #00ff58;
+    color: #ff264a;
+    color: #01015a;
+    color: #dc1457;
+    color: #eab454; */
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    display: inline-block;
+}
+
+a {
+    text-decoration: none;
+}
+
+#home {
+    background-color: #000000;
+    overflow: hidden;
+    position: relative;
+}
+
+.logo {
+    position: fixed;
+    top: -50px;
+    left: 45px;
+    font-family: 'Poppins', sans-serif;
+    color:#dc1435;
+    font-size: 25px;
+    text-decoration: none;
+    cursor: pointer;
+    letter-spacing: 2px;
+    z-index: 10;
+    animation: top_slide ease-in-out 1s 1s forwards;
+}
+
+@keyframes top_slide {
+    0% {
+        top: -50px;
+    }
+    100% {
+        top: 35px;
+    }
+}
+
+.logo:hover, .logo:active {
+    color: #dc1435;
+}
+
+.bg-hero {
+   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../assets/images/hero.jpg');
+   background-position: center;
+   background-size: cover;
+   background-repeat: no-repeat;
+   height: 100vh;
+   transform: scale(1.4);
+   animation: bg_hero ease-in-out 2s forwards;
+   transition: ease-in-out 2s;
+}
+
+@keyframes bg_hero {
+    0% {
+        transform: scale(1.3);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+#home .jumbo-heading {
+    padding: 0.5rem;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    font-size: 4rem; 
+    font-weight: 800;
+    color: transparent;
+    -webkit-text-stroke: 1px #dc1435;
+    letter-spacing: -1px;
+    opacity: 0;
+    animation: title ease-in-out 2s 1.5s forwards;
+}
+
+@keyframes title {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.jumbo-heading > span {
+    -webkit-text-stroke: 1px #ffffff;
+}
+
+.nav-bar-wrapper {
+    position: fixed;
+    top: -50px;
+    right: 45px;
+    width: 35px;
+    height: 35px;
+    z-index: 111;
+    cursor: pointer;
+    transition: all 1s ease;
+    animation: top_slide ease-in-out 1s 1s forwards;
+}
+
+.nav-bar-icon span.bar {
+    display: block;
+    width: 100%;
+    height: 3px;
+    margin: 8px auto;
+    background-color: #ffffff;
+    transition: all .3s ease-in-out;
+}
+
+.active span.bar:nth-child(1) {
+    transform: translateY(11px) rotate(45deg);
+    background-color: #dc1435;
+    margin: 0;
+}
+
+.active span.bar:nth-child(3) {
+    transform: translateY(-11px) rotate(-45deg);
+    background-color: #dc1435;
+    /* transform-origin: 0 0; */
+    margin: 0;
+}
+
+.active span.bar:nth-child(2) {
+    opacity: 0;
+}
+
+.social-icons-wrapper {
+    font-size: 14px;
+    color: #ffffff;
+    position: absolute;
+    bottom: -70px;
+    left: 50px;
+    height: 50px;
+    animation: bottom_slide ease-in-out 1s 1s forwards;
+}
+
+@keyframes bottom_slide {
+    0% {
+        bottom: -70px;
+    }
+    100% {
+        bottom: 10px;
+    }
+}
+
+.social-icons-wrapper ul::before,
+.home-quote-wrapper p::before {
+    content: "";
+    display: inline-block;
+    height: 1px;
+    width: 40px;
+    background: #ffffff;
+}
+
+.social-icons-wrapper li {
+    margin: 0 5px;
+}
+
+.soc-icon:hover {
+    text-decoration: underline #dc1435;
+}
+
+.soc-icon span {
+    color: #ffffff;
+    padding: 0 10px;
+}
+
+.soc-icon i {
+    color: #dc1435;
+}
+
+.home-quote-wrapper {
+    color: #ffffff;
+    position: absolute;
+    bottom: -70px;
+    right: 50px;
+    height: 50px;
+    animation: bottom_slide ease-in-out 1s 1s forwards;
+}
+
+.quote {
+    margin: 0;
+}
+
+.quote span {
+    color: #dc1435;
+}
+
+
+
+

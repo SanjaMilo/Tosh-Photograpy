@@ -1,0 +1,269 @@
+#works {
+    padding: 5% 7% 10%;
+    background-color: #e2e2e2;
+    color: #333333;
+}
+
+.work {
+    padding: 5% 0;
+}
+
+.content-works h3.work-title {
+    font-size: 3rem;
+    color: transparent;
+    -webkit-text-stroke: 1px #333333;
+    font-weight: 700;
+    letter-spacing: -1px;
+}
+
+.content-works .intro {
+    color: #dc1435;
+}
+
+.content-works .intro::before {
+    background: #000000;
+}
+
+h3.work-title > span {
+    -webkit-text-stroke: 1px #dc1435;
+}
+
+.content-col {
+    padding: 2rem 4rem 2rem 1rem;
+    line-height: 1.5;
+    text-align: start;
+}
+
+.content-col h5 {
+    letter-spacing: 1px;
+}
+
+.content-col h5 > span {
+    color: #dc1435;
+}
+
+/* Owl Carousel */
+
+.owl-dots {
+    text-align: center;
+    padding-top: 10px;
+}
+
+.owl-dots button.owl-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    display: inline-block;
+    background: #dc143546;
+    margin: 0 3px;
+}
+
+.owl-dots button.owl-dot.active {
+    background-color: #dc1435;
+}
+
+.owl-dots button.owl-dot:focus {
+    outline: none;
+}
+
+.owl-nav {
+    display: none;
+}
+
+.box-img {
+    transition: all 1.25s cubic-bezier(.01, .71, .26, .94);
+    clip-path: inset(0 0 0 0);
+    overflow: hidden;
+}
+
+.box-img img {
+    filter: grayscale(90%);
+    transition: .5s ease-in-out;
+}
+
+.box-img:hover {
+    clip-path: inset(15px 15px 15px 15px);
+}
+
+.box-img:hover img {
+    filter: grayscale(0);
+    transform: scale(1.15);
+}
+
+.box-text {
+    text-align: center;
+    line-height: 1.5;
+    position: absolute;
+    bottom: 7%;
+    left: 50%;
+    transform: translate(-50%);
+    border-top: 1px solid #dc1435;
+    border-bottom: 1px solid #dc1435;
+    padding: 0.5rem 1rem;
+}
+
+.box-text h4 {
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: #f7f7f7;
+    margin: 0;
+}
+
+.box-text h4 span {
+   color: #dc1435;
+}
+
+#testimonials {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('../assets/images/bg.jpg');
+    background-size: cover;
+    background-position: center top;
+    background-attachment: fixed;
+    background-color: #000000;
+    padding: 7% 0;
+}
+
+#testimonials video {
+    height: 60vh;
+    width: 100%;
+}
+
+.testimonials-wrapper {
+    margin: 0 20%;
+    text-align: center;
+    color: #ffffff;
+    font-size: 1.3rem;
+    line-height: 1.5;
+    font-weight: 200;
+}
+
+.testimonials-wrapper h4 {
+    display: inline-block;
+    font-weight: 400;
+    color: #dc1435;
+    margin: 0 0 1rem;
+}
+
+.show-work {
+    height: 100%;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.show-work-text-dark,
+.show-work-text-light {
+    height: 30vh;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.show-work-text-dark {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000;
+    color: #ffffff;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.show-work-text-light {
+    background-color: #dc1435;
+    color: #ffffff;
+    padding: 1.5rem 2.5rem;
+}
+
+.show-work-text-dark h3 {
+    color: #dc1435;
+    font-size: 1.3rem;
+    letter-spacing: 1px;
+}
+
+.show-work-img {
+    height: 70vh;
+    padding-left: 0;
+    padding-right: 0;
+    overflow: hidden;
+    position: relative;
+}
+
+.show-work-img img {
+    width: 100%;
+}
+
+.show-work-img::before {
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: calc(100% - 20px);
+    height: calc(100% - 20px);
+    background-color: #000000;
+    opacity: 0;
+    transition: all 0.5s ease-in-out; 
+}
+
+.show-work-img:hover::before {
+    opacity: 0.5;
+}
+
+.show-work-img:hover .icon-plus-square {
+    opacity: 1;
+}
+
+/* Modal */
+
+.modal-wrapper {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 200;
+    background-color: #000000;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+.modal-image {
+    width: 100%;
+    transition: all .7s linear;
+    opacity: 0;
+    transform: scale(1.7);
+    animation: zoom-image .7s linear;
+}
+
+.modal-img-visible {
+    opacity: 1;
+    transform: scale(1);
+}
+
+@keyframes zoom-image {
+    0% {
+        opacity: 0;
+        transform: scale(1.7);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.close-x {
+    cursor: pointer;
+    position: fixed;
+    top: 15px;
+    right: 55px;
+    color: #ffffff;
+    font-size: 3.5rem;
+    transition: 0.3s;
+    font-weight: 200;
+    z-index: 210;
+}
+
+.close-x:hover {
+    color: #dc1435;
+}
+
+
+
+

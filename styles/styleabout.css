@@ -1,0 +1,147 @@
+#about {
+    padding: 10% 7% 10%;
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.intro {
+    text-transform: uppercase;
+    color: #ffffff;
+    letter-spacing: 2px;
+}
+
+.intro::before {
+    content: "";
+    display: inline-block;
+    height: 1px;
+    width: 40px;
+    background: #dc1435;
+    margin-right: 5px;
+}
+
+.title-about {
+    font-size: 3rem;
+    color: transparent;
+    -webkit-text-stroke: 1px #ffffff;
+    font-weight: 700;
+    letter-spacing: -1px;
+    margin-bottom: 2rem;
+}
+
+.about-content {
+    justify-content: center;
+    align-items: center;
+}
+
+.about-me {
+    padding-right: 50px;
+}
+
+.title-about span {
+    -webkit-text-stroke: 1px #dc1435;
+}
+
+.about-image {
+    position: relative;
+    overflow: hidden;
+}
+
+.about-image::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    border: 40px solid rgba(255, 255, 255, 0.1);
+    z-index: 1;
+    background-color: black;
+    opacity: 0.6;
+}
+
+.about-image:hover img {
+    transform: scale(1.2);
+}
+
+.about-image img {
+    width: 100%;
+    transition: 0.4s ease-out 0s;
+    transform: scale(1);
+}
+
+/* Button */
+
+.btn-read-more {
+    position: relative;
+    display: inline-block;
+    color: #dc1435;
+    letter-spacing: 2px;
+    text-decoration: none;
+    font-weight: 200;
+    margin: 2rem 0;
+    outline: none;
+}
+
+.btn-read-more:hover {
+    color: #dc1435;
+}
+
+.btn-read-more>span {
+    position: relative;
+    display: inline-block;
+    padding: 0.7rem 1.7rem;
+}
+
+.btn-read-more::before,
+.btn-read-more::after {
+    position: absolute;
+    content: "";
+    right: 0;
+    bottom: 0;
+    background-color: #dc1435;
+    transition: all 0.3s ease;
+}
+
+.btn-read-more>span::before,
+.btn-read-more>span::after {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    background-color: #dc1435;
+    transition: all 0.3s ease;
+}
+
+.btn-read-more::before {
+    height: 50%;
+    width: 1px;
+}
+
+.btn-read-more::after {
+    width: 20%;
+    height: 1px;
+}
+
+.btn-read-more:hover::before,
+.btn-read-more>span:hover::before {
+    height: 100%;
+}
+
+.btn-read-more:hover::after,
+.btn-read-more>span:hover::after {
+    width: 100%;
+}
+
+.btn-read-more>span::before {
+    width: 1px;
+    height: 50%;
+}
+
+.btn-read-more>span::after {
+    width: 20%;
+    height: 1px;
+}
+
+.show-text {
+    display: none;
+}

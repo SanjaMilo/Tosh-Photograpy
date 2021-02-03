@@ -1,0 +1,106 @@
+#contact {
+    height: 100vh;
+}
+
+#contact .form-background {
+    background-image: linear-gradient(rgb(220, 20, 53, 0.3), rgba(0, 0, 0, 0.6)), url("../assets/images/red.jpg");
+    background-size: cover;
+    background-position: center top;
+    height: 100%;
+    width: 100%;
+    color: #dc1435;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    padding: 5% 10%;
+}
+
+.contact-info {
+    width: 40%;
+    padding: 2rem;
+}
+
+.contact-form {
+    width: 60%;
+    padding: 2rem;
+}
+
+.contact-info .intro {
+    color: #000000;
+}
+
+.contact-info .intro::before {
+    background: #ffffff;
+}
+
+
+.contact-info h3 {
+    font-size: 3rem;
+    color: transparent;
+    -webkit-text-stroke: 1px #ffffff;
+    font-weight: 700;
+    letter-spacing: -1px;
+    margin-bottom: 2rem;
+}
+
+.contact-info h3>span {
+    -webkit-text-stroke: 1px #000000;
+}
+
+.contact-info p {
+    color: #ffffff;
+    letter-spacing: 1px;
+}
+
+.form-field {
+    color: #000000;
+    background-color: transparent;
+    margin-bottom: 1.5rem;
+    outline: none;
+    border: 0;
+    border-radius: 0;
+    border-bottom: 1px solid #ffffff;
+    text-align: center;
+    transition: all .5s ease-in-out;
+}
+
+.form-field:focus {
+    background-color: transparent;
+    border-color: #000000;
+    color: #000000;
+    box-shadow: none;
+}
+
+input:focus {
+    background-color: transparent;
+}
+
+.form-group {
+    position: relative;
+}
+
+.form-group label {
+    color: #ffffff;
+    position: absolute;
+    left: 0.5rem;
+    bottom: 0.5rem;
+    font-size: 0.8rem;
+    /* bottom: -1.5rem; */
+}
+
+.form-group label {
+    transition: all ease-in-out .5s;
+}
+
+.btn-submit,
+.btn-submit:hover {
+    color: #ffffff;
+}
+
+.btn-submit::after,
+.btn-submit::before,
+.btn-submit>span::after,
+.btn-submit>span::before {
+    background-color: #ffffff;
+}
+
