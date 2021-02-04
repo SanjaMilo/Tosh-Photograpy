@@ -105,7 +105,7 @@ a {
     font-size: 4rem; 
     font-weight: 800;
     color: transparent;
-    -webkit-text-stroke: 1px #dc1435;
+    -webkit-text-stroke: 2px #dc1435;
     letter-spacing: -1px;
     opacity: 0;
     animation: title ease-in-out 2s 1.5s forwards;
@@ -121,7 +121,7 @@ a {
 }
 
 .jumbo-heading > span {
-    -webkit-text-stroke: 1px #ffffff;
+    -webkit-text-stroke: 2px #ffffff;
 }
 
 .nav-bar-wrapper {

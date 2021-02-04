@@ -132,13 +132,14 @@ let workImages = Array.from(document.querySelectorAll('.work-img'));
 let modal = document.getElementById('modal');
 let modalImg = document.getElementById('modalImg');
 let closeX = document.querySelector('.close-x');
+let isZoomed = false;
 
 function openModalImage () {
 	modal.style.display = 'block';
-	modalImg.src = this.dataset.src; 
-	modalImg.classList.add("modal-img-visible");
+	modalImg.src = this.dataset.src;
 	// moze i vaka ili kako podole, isto e
-    // modalImg.src = this.getAttribute('data-src');
+    // modalImg.src = this.getAttribute('data-src'); 
+	modalImg.classList.add("modal-img-visible");
 };
 
 function closeModalImage () {
@@ -146,10 +147,37 @@ function closeModalImage () {
 	setTimeout(function() {
 		modal.style.display = 'none';
 	}, 700);
+	zoomOutImage();
+	isZoomed = false;
 }
+
+function zoomInImage () {
+	modalImg.style.width = '100%'; // from auto to 100%
+	modalImg.style.height = 'auto'; // from 100% to auto
+	modal.style.overflowY = 'auto'; // from hidden to auto
+	modalImg.style.cursor = "zoom-out"; // from zoom-in to zoom-out
+};
+
+function zoomOutImage () {
+	modalImg.style.width = 'auto'; // from 100% auto to
+	modalImg.style.height = '100%'; // from auto 100% to 
+	modal.style.overflowY = 'hidden'; // from auto to hidden 
+	modalImg.style.cursor = 'zoom-in'; // from zoom-out to zoom-in
+};
+
+function toggleZoomImage() {
+	if (!isZoomed) {
+		zoomInImage();
+		isZoomed = true;
+	} else {
+		zoomOutImage();
+		isZoomed = false;
+	};
+};
 
 squarePluses.forEach(img => img.addEventListener('click', openModalImage));
 closeX.addEventListener('click', closeModalImage);
+modalImg.addEventListener('click', toggleZoomImage);
 
 // Gallery 
 
