@@ -21,8 +21,10 @@
         integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <!-- Styling sheets -->
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/stylemenu.css">
     <link rel="stylesheet" href="styles/styleabout.css">
-    <link rel="stylesheet" href="styles/stylecarousel.css">
+    <link rel="stylesheet" href="styles/styleworksptotos.css">
+    <link rel="stylesheet" href="styles/stylecarousels.css">
     <link rel="stylesheet" href="styles/stylegallery.css">
     <link rel="stylesheet" href="styles/stylevideo.css">
     <link rel="stylesheet" href="styles/stylecontact.css">
@@ -51,6 +53,29 @@
         <div class="home-quote-wrapper">
             <p class="quote">" <span>Photography </span>is a way of feeling, of touching, of loving. "</p>
         </div>
+            <!-- Open and close navbar menu from left and right side-->
+            <div class="left-fixed">
+                <div class="left-panel">
+                    <div class="left-panel-bg-image bg-img-home" data-ref="home"></div>
+                    <div class="left-panel-bg-image bg-img-about" data-ref="about"></div>
+                    <div class="left-panel-bg-image bg-img-works" data-ref="works"></div>
+                    <div class="left-panel-bg-image bg-img-photos" data-ref="photos"></div>
+                    <div class="left-panel-bg-image bg-img-seemore" data-ref="see more"></div>
+                    <div class="left-panel-bg-image bg-img-contact" data-ref="contact"></div>
+                </div>
+            </div>
+            <div class="right-fixed">
+                <div class="right-panel right-panel-nav-menu">
+                    <ul class="menu-list">
+                        <li><a class="menu-link active-link" href="">Home</a></li>
+                        <li><a class="menu-link" href="">About</a></li>
+                        <li><a class="menu-link" href="">Works</a></li>
+                        <li><a class="menu-link" href="">Photos</a></li>
+                        <li><a class="menu-link" href="">See more</a></li>
+                        <li><a class="menu-link" href="">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
     </section>
 
     <section id="about">
@@ -64,7 +89,10 @@
                     Quibusdam dignissimos provident eligendi praesentium tempore officia ex corporis. Facilis
                     consectetur ipsa eveniet a dolores cumque sint!</p>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus, nulla.</p>
-                <p id="more-text" class="show-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia deserunt obcaecati nihil reprehenderit dolores officiis ipsum iste deleniti blanditiis molestias, aut dignissimos velit sint alias magni possimus, nam, cupiditate voluptatibus consequatur! Harum neque, rerum qui cupiditate sed inventore mollitia consequuntur.</p>
+                <p id="more-text" class="show-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia
+                    deserunt obcaecati nihil reprehenderit dolores officiis ipsum iste deleniti blanditiis molestias,
+                    aut dignissimos velit sint alias magni possimus, nam, cupiditate voluptatibus consequatur! Harum
+                    neque, rerum qui cupiditate sed inventore mollitia consequuntur.</p>
                 <a id="read-more" role="button" class="btn-read-more"><span>Read more</span></a>
             </div>
             <div class="col-xl-6 col-md-6 col-sm-6 col-xs-12 about-img">
@@ -236,10 +264,10 @@
                 <!-- image column Second -->
             </div>
             <div class="col-xl-3 col-md-3 col-sm-6 col-xs-12 gal-col-3">
-               <!-- Image column Third -->
+                <!-- Image column Third -->
             </div>
             <div class="col-xl-3 col-md-3 col-sm-6 col-xs-12 gal-col-4">
-               <!-- Image column Forth -->
+                <!-- Image column Forth -->
             </div>
         </div>
         <div id="modal" class="modal-wrapper">
@@ -274,30 +302,30 @@
                 <h6>E-MAIL <span>ADDRESS</span></h6>
                 <p>tosh@toshphoto.com</p>
             </div>
-                <div class="contact-form">
-                    <form action="" autocomplete="off">
-                        <div class="form-group">
-                            <input class="form-control form-field" type="text" name="name">
-                            <label for="name">Name</label>
-                        </div>
-                        <div class="form-group">
-                            <input class="form-control form-field" type="email" name="email" id="email">
-                            <label for="email">E-mail</label>
-                        </div>
-                        <div class="form-group">
-                            <input class="form-control form-field" type="text" name="subject">
-                            <label for="subject">Subject</label>
-                        </div>
-                        <div class="form-group">
-                            <textarea class="form-control form-field" name="message" id="message" cols="30"
-                                rows="5"></textarea>
-                            <label for="message">Message</label>
-                        </div>
-                        <div class="form-group">
-                            <a class="btn-submit btn-read-more" role="button"><span>Submit</span></a>
-                        </div>
-                    </form>
-                </div>
+            <div class="contact-form">
+                <form action="" autocomplete="off">
+                    <div class="form-group">
+                        <input class="form-control form-field" type="text" name="name">
+                        <label for="name">Name</label>
+                    </div>
+                    <div class="form-group">
+                        <input class="form-control form-field" type="email" name="email" id="email">
+                        <label for="email">E-mail</label>
+                    </div>
+                    <div class="form-group">
+                        <input class="form-control form-field" type="text" name="subject">
+                        <label for="subject">Subject</label>
+                    </div>
+                    <div class="form-group">
+                        <textarea class="form-control form-field" name="message" id="message" cols="30"
+                            rows="5"></textarea>
+                        <label for="message">Message</label>
+                    </div>
+                    <div class="form-group">
+                        <a class="btn-submit btn-read-more" role="button"><span>Submit</span></a>
+                    </div>
+                </form>
+            </div>
         </div>
     </section>
 
@@ -316,7 +344,8 @@
                 </div>
                 <div class="quote">
                     <h4>A FEW THINGS I BELIEVE</h4>
-                    <p>" Make your day personal and let it reflect who you are as a couple. Quisque ornare erat et ex consectetur pellentesque. "</p>
+                    <p>" Make your day personal and let it reflect who you are as a couple. Quisque ornare erat et ex
+                        consectetur pellentesque. "</p>
                 </div>
             </div>
         </div>
@@ -359,6 +388,8 @@
         crossorigin="anonymous"></script>
 
     <script src="js/main.js"></script>
+    <script src="js/navmenu.js"></script>
+    <script src="js/owlcarousel.js"></script>
 
 </body>
 

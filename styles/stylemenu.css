@@ -1,0 +1,99 @@
+.left-fixed, .right-fixed {
+    position: fixed;
+    top: 0;
+    height: 100%;
+    opacity: 0;
+    background-color: #000000;
+    overflow: hidden;
+    z-index: 110;
+    transition: all .8s ease-in-out;}
+
+.left-fixed {
+    left: -100%;
+    width: 66.666666%;
+}
+
+.right-fixed {
+    right: -100%;
+    width: 33.333333%;
+}
+
+.left-panel {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
+
+.left-panel-bg-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-size: cover;
+    background-position: center;
+    pointer-events: none;
+    width: 100%;
+    height: 100%;
+    visibility: hidden;
+    transform: scale(1.1);
+    transition: all 1s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.bg-img-home {
+   background-image: url('../assets/images/menu/home.jpg'); 
+   visibility: visible;
+   transform: scale(1);
+}
+
+.bg-img-about {
+    background-image: url('../assets/images/menu/about.jpg');
+}
+
+.bg-img-works {
+    background-image: url('../assets/images/menu/works.jpg');
+}
+
+.bg-img-photos {
+    background-image: url('../assets/images/menu/photos.jpg');
+}
+
+.bg-img-seemore {
+    background-image: url('../assets/images/menu/see\ more.jpg');
+}
+
+.bg-img-contact {
+    background-image: url('../assets/images/menu/contact.jpg'); 
+}
+
+.right-panel-nav-menu {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
+
+.menu-list li {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.menu-list .menu-link {
+    font-size: 1.3rem; 
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: transparent;
+    -webkit-text-stroke: 1px #ffffff;
+    cursor: pointer;
+    transition: all .5s ease-in-out; 
+}
+
+.active-link {
+    color: transparent;
+   -webkit-text-stroke: 1px #dc1435 !important; 
+}
+

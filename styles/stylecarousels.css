@@ -1,0 +1,100 @@
+/* Owl Carousel - images carousel in Works section */
+
+.owl-dots {
+    text-align: center;
+    padding-top: 10px;
+}
+
+.owl-dots button.owl-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    display: inline-block;
+    background: #dc143546;
+    margin: 0 3px;
+}
+
+.owl-dots button.owl-dot.active {
+    background-color: #dc1435;
+}
+
+.owl-dots button.owl-dot:focus {
+    outline: none;
+}
+
+.owl-nav {
+    display: none;
+}
+
+.box-img {
+    transition: all 1.25s cubic-bezier(.01, .71, .26, .94);
+    clip-path: inset(0 0 0 0);
+    overflow: hidden;
+}
+
+.box-img img {
+    filter: grayscale(90%);
+    transition: .5s ease-in-out;
+}
+
+.box-img:hover {
+    clip-path: inset(15px 15px 15px 15px);
+}
+
+.box-img:hover img {
+    filter: grayscale(0);
+    transform: scale(1.15);
+}
+
+.box-text {
+    text-align: center;
+    line-height: 1.5;
+    position: absolute;
+    bottom: 7%;
+    left: 50%;
+    transform: translate(-50%);
+    border-top: 1px solid #dc1435;
+    border-bottom: 1px solid #dc1435;
+    padding: 0.5rem 1rem;
+}
+
+.box-text h4 {
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: #f7f7f7;
+    margin: 0;
+}
+
+.box-text h4 span {
+   color: #dc1435;
+}
+
+#testimonials {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('../assets/images/bg.jpg');
+    background-size: cover;
+    background-position: center top;
+    background-attachment: fixed;
+    background-color: #000000;
+    padding: 7% 0;
+}
+
+#testimonials video {
+    height: 60vh;
+    width: 100%;
+}
+
+.testimonials-wrapper {
+    margin: 0 20%;
+    text-align: center;
+    color: #ffffff;
+    font-size: 1.3rem;
+    line-height: 1.5;
+    font-weight: 200;
+}
+
+.testimonials-wrapper h4 {
+    display: inline-block;
+    font-weight: 400;
+    color: #dc1435;
+    margin: 0 0 1rem;
+}

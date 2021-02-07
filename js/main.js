@@ -1,24 +1,13 @@
-// let bgHero = document.querySelector('.bg-hero');
-// let num = 2;
+// Read more (show more text) text in About section
 
-// function changeHeroImage () {
-//     bgHero.style.backgroundImage = `url('assets/images/${num}.jpg')`;
-//     num ++;
-//     if (num > 5) {
-//        num = 1;
-//     }
-// }
-//  setInterval(changeHeroImage, 5000);
+let moreText = $("#more-text");
+let loadMoreBtn = $("#read-more");
 
-// Change bar-menu design on click
-
-let barMenu = document.querySelector('.nav-bar-icon');
-
-function openMenu() {
-	barMenu.classList.toggle('active');
+function showMoreText() {
+	moreText.show(500);
 }
 
-barMenu.addEventListener('click', openMenu);
+loadMoreBtn.click(showMoreText);
 
 // Contact form
 
@@ -35,54 +24,10 @@ function inputFieldFocused() {
 			label.style.color = '#000000';
 		}
 	});
-}
+};
 
 formFields.forEach((el) => el.addEventListener('focus', inputFieldFocused));
 
-// Owl carousel
-
-$(function() {
-	$('#works .owl-carousel').owlCarousel({
-		loop: true,
-		margin: 40,
-		responsiveClass: true,
-		responsive: {
-			0: {
-				items: 1,
-				nav: true
-			},
-			600: {
-				items: 2,
-				nav: false
-			},
-			1000: {
-				items: 3,
-				nav: true
-				// loop:false
-			}
-		},
-		autoplay: true,
-		autoplaySpeed: 900,
-		autoplayTimeout: 7000,
-		smartSpeed: 1000
-	});
-
-	$('#testimonials .owl-carousel').owlCarousel({
-		loop: true,
-		margin: 40,
-		responsiveClass: true,
-		responsive: {
-			0: {
-				items: 1,
-				nav: true
-			}
-		},
-		autoplay: true,
-		autoplaySpeed: 900,
-		autoplayTimeout: 7000,
-		smartSpeed: 800
-	});
-});
 
 // Create image card in Gallery section
 
@@ -196,13 +141,7 @@ function hideGallery() {
 galleryOpener.click(showGallery);
 galleryCloser.click(hideGallery);
 
-// Read more text
 
-let moreText = $("#more-text");
-let loadMoreBtn = $("#read-more");
 
-function showMoreText() {
-	moreText.show(500);
-}
 
-loadMoreBtn.click(showMoreText);
+

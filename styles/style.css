@@ -15,6 +15,7 @@ html, body {
     font-family: 'Poppins', sans-serif;
     /* font-family: 'Monoton', cursive; */
     /* font-family: 'Kaushan Script', cursive; */
+    font-size: 16px;
 }
 
 * {
@@ -130,7 +131,7 @@ a {
     right: 45px;
     width: 35px;
     height: 35px;
-    z-index: 111;
+    z-index: 120;
     cursor: pointer;
     transition: all 1s ease;
     animation: top_slide ease-in-out 1s 1s forwards;
