@@ -67,12 +67,12 @@
             <div class="right-fixed">
                 <div class="right-panel right-panel-nav-menu">
                     <ul class="menu-list">
-                        <li><a class="menu-link active-link" href="">Home</a></li>
-                        <li><a class="menu-link" href="">About</a></li>
-                        <li><a class="menu-link" href="">Works</a></li>
-                        <li><a class="menu-link" href="">Photos</a></li>
-                        <li><a class="menu-link" href="">See more</a></li>
-                        <li><a class="menu-link" href="">Contact</a></li>
+                        <li><a class="menu-link active-link" href="#home">Home</a></li>
+                        <li><a class="menu-link" href="#about">About</a></li>
+                        <li><a class="menu-link" href="#works">Works</a></li>
+                        <li><a class="menu-link" href="#photos">Photos</a></li>
+                        <li><a class="menu-link" href="#see-more">See more</a></li>
+                        <li><a class="menu-link" href="#contact">Contact</a></li>
                     </ul>
                 </div>
             </div>
@@ -165,7 +165,7 @@
         </div>
     </section>
 
-    <section id="photos container-fluid">
+    <section id="photos">
         <div class="row show-work">
             <div class="col-xl-6 col-xs-12 show-work-text-dark">
                 <div>
@@ -276,14 +276,14 @@
         </div>
     </section>
 
-    <section class="video-background-container">
+    <section id="see-more" class="video-background-container">
         <div class="video-wrapper">
             <video src="assets/images/photocamera.mp4" autoplay poster="assets/images/photo-camera.jpg" loop
                 muted></video>
         </div>
         <div class="overlay"></div>
         <div class="content-text">
-            <h1>Photography is amazing</h1>
+            <h1 class="video-title">Photography is amazing</h1>
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto nihil commodi, aut cumque qui
                 repellendus animi facilis minima officia sapiente!</p>
             <a id="gallery-opener" role="button" class="btn-read-more"><span>VIEW GALLERY</span></a>
@@ -351,7 +351,7 @@
         </div>
     </section>
 
-    <footer class="section-footer container-fluid">
+    <footer id="footer" class="section-footer container-fluid">
         <div class="row">
             <div class="col-xl-4 col col-md-4 col-sm-12 col-xs-12">
                 <a href="index.html" class="footer-logo"><i class="fas fa-camera"></i> Tosh'</a>
@@ -390,6 +390,7 @@
     <script src="js/main.js"></script>
     <script src="js/navmenu.js"></script>
     <script src="js/owlcarousel.js"></script>
+    <script src="js/scroll.js"></script>
 
 </body>
 

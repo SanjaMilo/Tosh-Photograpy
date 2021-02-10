@@ -6,26 +6,33 @@ let rightFixed = document.querySelector('.right-fixed');
 
 let isOpened = false;
 
+function openLeftRightPanels() {
+	leftFixed.style.opacity = "1";
+	leftFixed.style.left = "0";
+	rightFixed.style.opacity = "1";
+	rightFixed.style.right = "0";
+};
+
+function closeLeftRightPanels() {
+	leftFixed.style.opacity = "0";
+	leftFixed.style.left = "-100%";
+	rightFixed.style.opacity = "0";
+	rightFixed.style.right = "-100%";
+};
+
 function openMenu() {
 	barMenu.classList.toggle('active');
-	if(!isOpened) {
-		leftFixed.style.opacity = "1";
-		leftFixed.style.left = "0";
-		rightFixed.style.opacity = "1";
-		rightFixed.style.right = "0";
-		isOpened = true;
+	isOpened = !isOpened;
+	if(isOpened == true) {
+		openLeftRightPanels();
 	} else {
-		leftFixed.style.opacity = "0";
-		leftFixed.style.left = "-100%";
-		rightFixed.style.opacity = "0";
-		rightFixed.style.right = "-100%";
-		isOpened = false;
+		closeLeftRightPanels();
 	};
 };
 
 barMenu.addEventListener('click', openMenu);
 
-// Menu background image change
+// Menu background image change on hover on the menu-links 
 
 let leftPanel = document.querySelector('.left-panel');
 let links = Array.from(document.querySelectorAll('.menu-link'));
