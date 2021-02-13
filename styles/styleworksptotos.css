@@ -68,6 +68,10 @@ h3.work-title > span {
     text-align: center;
 }
 
+.show-work-text-dark div {
+    padding: 2rem 1rem 1rem 1rem;
+}
+
 .show-work-text-light {
     background-color: #dc1435;
     color: #ffffff;
