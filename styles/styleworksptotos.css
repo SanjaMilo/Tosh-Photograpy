@@ -54,7 +54,6 @@ h3.work-title > span {
 
 .show-work-text-dark,
 .show-work-text-light {
-    height: 30vh;
     padding-left: 0;
     padding-right: 0;
 }
@@ -72,6 +71,11 @@ h3.work-title > span {
 .show-work-text-light {
     background-color: #dc1435;
     color: #ffffff;
+    
+}
+
+.text-desc {
+    width: 100%;
     padding: 1.5rem 2.5rem;
 }
 
@@ -82,7 +86,6 @@ h3.work-title > span {
 }
 
 .show-work-img {
-    height: 70vh;
     padding-left: 0;
     padding-right: 0;
     overflow: hidden;
@@ -91,6 +94,7 @@ h3.work-title > span {
 
 .show-work-img img {
     width: 100%;
+    height: 100%;
 }
 
 .show-work-img::before {
@@ -171,6 +175,49 @@ h3.work-title > span {
     color: #dc1435;
 }
 
+/* Responsiveness tablet and mobile  */
 
+@media only screen and (max-width: 1200px) {
+    .content-works h3.work-title {
+        font-size: 2.5rem;
+    }
+}
+
+@media only screen and (max-width: 1030px) {
+    .content-works h3.work-title {
+        font-size: 2rem;
+        letter-spacing: 1px;
+    }
+
+    .content-col {
+        padding: 1rem;
+    }
+
+    .modal-wrapper {
+       padding: 0;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .content-col h5 {
+        font-size: 1.1rem;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .show-work-text-light p  {
+        margin-bottom: 0.5rem;
+    }
+}
+
+@media only screen and (max-width: 350px) {
+    .content-works h3.work-title {
+        font-size: 1.5rem;
+    }
+
+    .text-desc{
+        padding: 1rem;
+    }
+}
 
 

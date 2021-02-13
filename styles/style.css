@@ -11,22 +11,12 @@
 
 html, body {
     margin: 0;
-    /* font-family: 'Montserrat', sans-serif; */
     font-family: 'Poppins', sans-serif;
-    /* font-family: 'Monoton', cursive; */
-    /* font-family: 'Kaushan Script', cursive; */
     font-size: 16px;
 }
 
 * {
     box-sizing: border-box;
-
-    /* color: #00f2b6;
-    color: #00ff58;
-    color: #ff264a;
-    color: #01015a;
-    color: #dc1457;
-    color: #eab454; */
 }
 
 ul {
@@ -68,7 +58,7 @@ a {
         top: -50px;
     }
     100% {
-        top: 35px;
+        top: 25px;
     }
 }
 
@@ -105,6 +95,7 @@ a {
     transform: translate(-50%, -50%); 
     font-size: 4rem; 
     font-weight: 800;
+    text-align: center;
     color: transparent;
     -webkit-text-stroke: 2px #dc1435;
     letter-spacing: -1px;
@@ -169,7 +160,7 @@ a {
     position: absolute;
     bottom: -70px;
     left: 50px;
-    height: 50px;
+    height: 40px;
     animation: bottom_slide ease-in-out 1s 1s forwards;
 }
 
@@ -213,7 +204,7 @@ a {
     position: absolute;
     bottom: -70px;
     right: 50px;
-    height: 50px;
+    height: 40px;
     animation: bottom_slide ease-in-out 1s 1s forwards;
 }
 
@@ -225,6 +216,73 @@ a {
     color: #dc1435;
 }
 
+/* Responsiveness tablet and mobile  */
 
+@media only screen and (max-width: 1267px) {
+    #home .jumbo-heading {
+        font-size: 3rem;   
+    }
+}
 
+@media only screen and (max-width: 1000px) {
+    .home-quote-wrapper {
+       display: none;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .logo {
+        left: 20px;
+    }
+
+    .nav-bar-wrapper {
+        right: 20px;
+    }
+
+    .social-icons-wrapper {
+        left: 20px;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    body {
+        font-size: 14px;
+    }
+
+    .social-icons-wrapper {
+        height: auto
+    }
+
+    .social-icons-wrapper li {
+        display: block;
+        margin-bottom: 7px;
+    }
+
+    .logo {
+        font-size: 16px;
+    }
+}
+
+@media only screen and (max-width: 350px) {
+    #home .jumbo-heading {
+        font-size: 2.2rem;   
+    }
+}
+
+@media only screen and (max-width: 260px) {
+    #home .jumbo-heading {
+        font-size: 2rem; 
+        color: transparent;
+        -webkit-text-stroke: 1px #dc1435; 
+    }
+
+    .jumbo-heading > span {
+        -webkit-text-stroke: 1px #ffffff;
+    }
+
+    .social-icons-wrapper {
+        font-size: 12px;
+    }
+
+}
 

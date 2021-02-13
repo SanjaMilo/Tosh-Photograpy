@@ -98,3 +98,13 @@
     color: #dc1435;
     margin: 0 0 1rem;
 }
+
+/* Responsiveness tablet and mobile  */
+
+@media only screen and (max-width: 900px) {
+    .testimonials-wrapper {
+        margin: 0 10%;
+        font-size: 1rem;
+    }
+}
+

@@ -39,3 +39,15 @@
 .copyright {
     margin-top: 0.5rem;
 }
+
+/* Responsiveness tablet and mobile  */
+
+@media only screen and (max-width: 750px) {
+    .section-footer {
+        padding: 5% 10%;
+    }
+
+    .section-footer .col-sm-12 {
+        margin-bottom: 1rem;
+    }
+}

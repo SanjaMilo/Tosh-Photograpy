@@ -15,8 +15,6 @@ $('.menu-link').click(function() {
     return false;
 });
 
-
-
 	// Footer button to scroll to the top of the page
 
 	let scrollBtn = $('.scroll-top');

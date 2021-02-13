@@ -81,7 +81,7 @@ let isZoomed = false;
 function openModalImage () {
 	modal.style.display = 'block';
 	modalImg.src = this.dataset.src;
-	// moze i vaka ili kako podole, isto e
+	// same as bellow code line
     // modalImg.src = this.getAttribute('data-src'); 
 	modalImg.classList.add("modal-img-visible");
 };
@@ -92,7 +92,7 @@ function closeModalImage () {
 		modal.style.display = 'none';
 	}, 700);
 	zoomOutImage();
-	isZoomed = false; // set isZoomed to false (not zoomed)
+	isZoomed = false; // set isZoomed to false (initial state - not zoomed), when closing)
 }
 
 function zoomInImage () {
