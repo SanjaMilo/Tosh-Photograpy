@@ -77,6 +77,7 @@ let modal = document.getElementById('modal');
 let modalImg = document.getElementById('modalImg');
 let closeX = document.querySelector('.close-x');
 let isZoomed = false;
+let windowWidth = window.innerWidth;
 
 function openModalImage () {
 	modal.style.display = 'block';
@@ -84,9 +85,17 @@ function openModalImage () {
 	// same as bellow code line
     // modalImg.src = this.getAttribute('data-src'); 
 	modalImg.classList.add("modal-img-visible");
+	// console.log(windowWidth); // test
+	let modalImgWidth = modalImg.offsetWidth; // determine image width after modal opens (not before, display is none)
+	if (modalImgWidth > windowWidth) {
+		modal.style.overflowX = 'auto';
+	} else {
+		modal.style.overflowX = 'hidden';
+	};
 };
 
 function closeModalImage () {
+	modal.style.overflowX = 'hidden';
 	modalImg.classList.remove("modal-img-visible");
 	setTimeout(function() {
 		modal.style.display = 'none';
