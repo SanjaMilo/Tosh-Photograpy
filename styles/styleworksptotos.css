@@ -200,6 +200,11 @@ h3.work-title > span {
     .modal-wrapper {
        padding: 0;
     }
+
+    .close-x {
+        top: 0;
+        right: 25px;
+    }
 }
 
 @media only screen and (max-width: 800px) {

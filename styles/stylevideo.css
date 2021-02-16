@@ -35,6 +35,7 @@
     text-align: center;
     padding: 5% 10%;
     font-family: 'Poppins', sans-serif;
+    width: 100%;
 }
 
 .content-text h1 {
@@ -107,5 +108,12 @@
 @media only screen and (max-width: 610px) {
     .content-text h1 {
         letter-spacing: 7px;
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    .content-text h1 {
+        font-size: 1.2rem;
+        letter-spacing: 3px;
     }
 }
