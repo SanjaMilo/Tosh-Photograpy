@@ -1,3 +1,26 @@
+// Scroll to Top functionality 
+let root = document.documentElement;
+let btnScroll = document.querySelector('.scroll-to-top');
+
+function scrollUp () {
+	root.scrollTo({
+		top: 0,
+		behavior: "smooth"
+	});
+};
+
+function handleScrollUp () {
+	let scrolled = root.scrollHeight - root.clientHeight;
+	if ((root.scrollTop / scrolled) > 0.14) {
+		btnScroll.style.display = 'block';
+	} else {
+		btnScroll.style.display = 'none';
+	}
+}
+
+btnScroll.addEventListener('click', scrollUp);
+document.addEventListener('scroll', handleScrollUp);
+
 // Read more (show more text) text in About section
 
 let moreText = $("#more-text");
